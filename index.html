@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="styleSheet" href="./sass/style.css" />
+    <link rel="styleSheet" href="./sass/fontsloginforget.css" />
     <link rel="styleSheet" href="./sass/styleicon.css" />
     <link rel="styleSheet" href="./sass/login.css" />
     <link rel="styleSheet" href="./sass/styleArrow.css" />
@@ -25,6 +26,7 @@
     <link rel="styleSheet" href="./sass/icones.css" />
     <link rel="styleSheet" href="./sass/stylearrows.css" />
     <link rel="styleSheet" href="./sass/styleserch.css" />
+    <link rel="styleSheet" href="./sass/responsive/responsive.css" />
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
     <title>Flowers</title>
@@ -65,7 +67,7 @@
                   id="search__gift--houstonianum"
                   class="search__gift--flowers"
                 >
-                  Ageratum houstonianum
+                  Ageratum houst
                 </div>
                 <div id="search__gift--roseum" class="search__gift--flowers">
                   Allium roseum
@@ -84,7 +86,7 @@
                 </div>
               </div>
               <div class="search__hide"></div>
-
+<div class="responsive_br show"><br/></div>
               <div class="header__phone">
                 <img src="./images/Red_Phone_Font-Awesome.svg.png" /><span
                   class="serche_box icon-search"
@@ -96,13 +98,16 @@
               <div class="font_9__singin show">
                 <div class="font_9__pass--all" id="passlogin">
                   <span class="icon-lock fontlock"></span>
-                  <div>welcome in page</div>
+                  <div class="fontlock__unlock">welcome in page</div>
                   <br />
                 </div>
 
                 <div class="font_9__exit">
-                  <span class="exit">&#9747;</span>
+                  <span class="exit">
+                    <img src="images/exit.png" />
+                  </span>
                 </div>
+              
                 <form class="font_9__form--register" id="font_9__form--login">
                   <span class="font_9__error--all" id="errorall"></span>
                   <div>
@@ -135,45 +140,92 @@
                       name="register"
                     />
                   </div>
+             
                   <a>
                     <span class="username__register" id="username__register"
                       >register</span
                     >
                   </a>
+                  <a>
+
+                    <span class="username__login" id="username__forgetpassword"
+                      >forget password!</span
+                    >
+                  </a>
                   <div id="cluckpage" class="cluckpage"></div>
                 </form>
+                <form class="font_9__form--forget show" id="font_9__form--forget">    
+                  <div>
+                    <span class="icon-key2 username__mail"></span>
+
+                    <input 
+                    id="forgetpassword"
+                    class="font_9__input"
+                    type="text"
+                    placeholder="Username"
+                    name="f"
+                  />
+                  </div>  
+
+                  <div>
+                    <input
+                      type="button"
+                      class="font_9__button"
+                      id="forget"
+                      value="send"
+                      name="register"
+                    />
+                  </div>
+
+             
+                  <a>
+                    <span class="username__register" id="backtologin"
+                      >back to login</span
+                    >
+                  </a>
+              </form>
                 <form
                   class="font_9__form--register show"
                   id="font_9__form--register"
                 >
                   <span class="font_9__error--all" id="errorall"></span>
+
+            
                   <div>
                     <span class="icon-mail4 username__mail"></span>
                     <input
-                      id="username__register"
+                      id="username__registeres"
                       class="icon-mail4 font_9__input"
                       type="text"
                       placeholder="username"
                       name="f"
+                      value=""
                     />
                   </div>
                   <div>
                     <span class="icon-lock username__mail"></span>
 
                     <input
-                      id="password__register"
+                      id="password__registeres"
                       class="font_9__input"
                       type="password"
                       placeholder="password"
                       name="f"
+                      value=""
+
                     />
+                    </div>
+                    <div>
+                    <span class="icon-phone username__mail"></span>
 
                     <input
-                      id="phonnumber__register"
+                      id="phonnumber__registeresr"
                       class="font_9__input"
                       type="password"
                       placeholder="phon number"
                       name="f"
+                      value=""
+
                     />
                   </div>
                   <div>
@@ -185,8 +237,11 @@
                       name="register"
                     />
                   </div>
+              
+               
+
                   <a>
-                    <span class="username__login" id="username__login"
+                    <span class="username__register" id="username__login"
                       >login</span
                     >
                   </a>
@@ -278,14 +333,17 @@
                 class="header__main--nemu-hide"
                 id="header__main--nemu-hide"
               ></div>
-              <ul class="asfasfasf">
-                <li class="header__pointers" id="header__pointers">
-                  Birthday
-                  <span class="icon-down_b_arrow_icon header__pointers"></span>
+              <div><img class="responsive__menu" src="images/line3.png" /></div>
+              <ul class="asfasfasf" id="alleid__menu">
+                <li class="header__pointers hover__border" id="header__pointers">
+                 <a href="#Birthday">Birthday</a> 
+                  <span class=" header__pointers">
+                    <img class="arrow__images" src="images/arrowdown.png" />
+                  </span>
                 </li>
                 <div id="header__birthday" class="header__birthday">
                   <div class="header__birthday--text">
-                    <h2 class="header__color">Flowers</h2>
+                    <h2 class="header__color ">Flowers</h2>
                     <img
                       src="images/f1.png"
                       class="flower__image--range"
@@ -328,9 +386,12 @@
                   </div>
                 </div>
 
-                <li class="header__pointers" id="header__pointers2">
-                  Flowers
-                  <span class="icon-down_b_arrow_icon header__pointers"></span>
+                <li class="header__pointers hover__border" id="header__pointers2">
+                  <a href="#Flowers">Flowers</a>   
+                  <span class=" header__pointers">
+                    <img class="arrow__images" src="images/arrowdown.png" />
+
+                  </span>
                 </li>
                 <div id="header__Flowers" class="header__Flowers">
                   <div class="header__birthday--text">
@@ -367,9 +428,13 @@
                   </div>
                 </div>
 
-                <li class="header__pointers" id="header__pointers3">
-                  Occasions
-                  <span class="icon-down_b_arrow_icon header__pointers"></span>
+                <li class="header__pointers hover__border" id="header__pointers3">
+                  <a href="#Occasions">Occasions</a>   
+                  
+                  <span class=" header__pointers">
+                    <img class="arrow__images" src="images/arrowdown.png" />
+
+                  </span>
                 </li>
                 <div id="header__Occasions" class="header__Occasions">
                   <div class="header__birthday--text">
@@ -393,13 +458,17 @@
                   </div>
                 </div>
 
-                <li class="header__pointers" id="header__pointers4">
-                  Sympathhy & Funeral
-                  <span class="icon-down_b_arrow_icon header__pointers"></span>
+                <li class="header__pointers hover__border hover__border" id="header__pointers4">
+                  <a href="#Sympathhy&Funeral">  Sympathhy & Funeral</a>   
+                
+                  <span class=" header__pointers">
+                    <img class="arrow__images" src="images/arrowdown.png" />
+
+                  </span>
                 </li>
                 <div id="header__Sympathhy" class="header__Sympathhy">
                   <div class="header__birthday--text">
-                    <h2 class="header__color">ALL FLOWERS</h2>
+                    <h2 class="header__color hover__border">ALL FLOWERS</h2>
                     <img
                       src="images/flogo1.png"
                       class="flower__image--range"
@@ -443,16 +512,26 @@
                   </div>
                 </div>
 
-                <li class="header__pointers">
-                  Gift Bsdkets
-                  <span class="icon-down_b_arrow_icon header__pointers"></span>
+                <li class="header__pointers hover__border">
+                  <a href="#GiftBsdkets">Gift Bsdkets</a>   
+                  <span class="header__pointers">
+                    <img class="arrow__images" src="images/arrowdown.png" />
+
+                  </span>
                 </li>
-                <li class="header__pointers">
-                  Plants
-                  <span class="icon-down_b_arrow_icon header__pointers"></span>
+                <li class="header__pointers hover__border">
+                  <a href="#Plants">Plants</a>   
+                  <span class="header__pointers">
+                    <img class="arrow__images" src="images/arrowdown.png" />
+
+                  </span>
                 </li>
-                <li class="header__pointers">Gidt Idea</li>
-                <li class="header__pointers">Blog</li>
+                <li class="header__pointers hover__border">
+                  <a href="#GidtIdea">Gidt Idea</a>   
+                  </li>
+                <li class="header__pointers hover__border">
+                  <a href="#Blog">Blog</a>   
+                  </li>
               </ul>
             </div>
           </div>
@@ -504,6 +583,7 @@
 
           <span class="form__input">
             <label class="form__input--lable">OCCASION(OPTIONAL)</label>
+            
             <input
               id="input__OCCASION"
               class="form__input--font"
@@ -511,6 +591,7 @@
               placeholder="Select A Occasion"
               name="location"
             />
+            
             <span id="input__OCCASION1" class="font_9__input--DATE1"></span>
           </span>
 
@@ -533,7 +614,7 @@
     </form>
 
     <main class="main">
-      <div class="main__disy icon-home3">Gerbera DAISY vase a2321</div>
+      <div class="main__disy icon-home3">&nbsp;Gerbera DAISY vase a2321</div>
       <div class="main__slider">
         <!-- slider flowers -->
 
@@ -706,7 +787,7 @@
               </div>
             </div>
 
-            <div class="main__wishlist">
+            <div class="main__wishlist--bottom">
               <input
                 type="button"
                 id="main__input--coupon"
@@ -731,20 +812,24 @@
               /><br />
             </div>
           </div>
+
+
           <div class="sotioal">
-            <a href="http://www.google.com"
+           <span class="sotioals__around--img"><a href="https://www.pinterest.com/login/"
               ><img class="main__img" src="./images/p.png"
-            /></a>
-            <a href="http://www.google.com"
+            /></a></span> 
+            <span class="sotioals__around--img"> <a href="http://www.google.com"
               ><img class="main__img" src="./images/g.png"
-            /></a>
-            <a href="http://www.google.com"
+            /></a></span> 
+            <span class="sotioals__around--img">  <a href="http://www.google.com"
               ><img class="main__img" src="./images/t.png"
-            /></a>
-            <a href="http://www.google.com"
+            /></a></span> 
+            <span class="sotioals__around--img">  <a href="http://www.google.com"
               ><img class="main__img" src="./images/f.png"
-            /></a>
+            /></a></span> 
           </div>
+
+
         </div>
       </div>
 
@@ -767,6 +852,7 @@
               />
               <span class="main__margin--gif">pleas choose</span>
             </span>
+            
 
             <span class="main__flex">
               <img
@@ -841,13 +927,10 @@
           More discription about your flower delivery oder in canada
         </div>
         <div class="main__lorem">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-          eaque? Aliquam, aliquid libero similique commodi explicabo, illo alias
-          nesciunt perspiciatis fuga nemo itaque eveniet optio, excepturi
-          distinctio. Nesciunt, vitae natus?Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Dolores officia assumenda pariatur
-          provident aspernatur laborum magnam, hic nam beatae nesciunt, iusto
-          earum tenetur.
+         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </div>
 
         <hr class="main_hr2" />
@@ -880,7 +963,7 @@
                 type="submit"
                 id="main__input--apply"
                 class="main__input--apply"
-                value="SENDREVIEW"
+                value="SEND REVIEW"
               />
               <div id="loader__Costomer" class="loader__Costomer"></div>
               <div
@@ -971,15 +1054,16 @@
         </div>
       </div>
       <div class="main__review--product">
-        there is no question do you nwish you be the firs question aske!
+        there is no question do you nwish you be the firs question aske ?
       </div>
       <div class="main__images--footer">
         <img src="images/Group 19.png" />
       </div>
     </main>
-    <hr class="main_hr2" />
+    <hr class="main_hr4" />
 
     <footer>
+      <div class="background_footer"></div>
       <div class="footer">
         <div class="footer__customer1">
           <span class="margin__bottom">CUSTOMER SERVICE</span>
@@ -1016,34 +1100,34 @@
           copyright @ 2018 Flowers.All Rights Resarver
         </div>
         <div class="footer__socialmedia">
-          <a class="footer__socialmedia--squire" href="http://www.google.com"
+          <span class="sotioals__around--img"> <a class="footer__socialmedia--squire" href="http://www.google.com"
             ><img class="main__img" src="./images/letter_g_PNG64.png"
-          /></a>
-          <a href="http://www.google.com"
-            ><img class="main__img" src="./images/t.png"
-          /></a>
-          <a href="http://www.google.com"
+          /></a></span>
+          <span class="sotioals__around--img"> <a href="http://www.google.com"
+            ><img class="main__img" src="./images/foto-in-png-6-png-image-in-png-256_256.png"
+          /></a></span>
+          <span class="sotioals__around--img"><a href="http://www.google.com"
             ><img
               class="main__img"
-              src="./images/foto-in-png-6-png-image-in-png-256_256.png"
-          /></a>
-          <a href="http://www.google.com"
-            ><img class="main__img" src="./images/youtube-symbol.png"
-          /></a>
-          <a class="footer__socialmedia--squire" href="http://www.google.com"
+              src="./images/youtube-symbol.png"
+          /></a></span>
+          <span class="sotioals__around--img"> <a href="http://www.google.com"
+            ><img class="main__img" src="./images/instagram-logo-BB7C1CC9BD-seeklogo.com.png"
+          /></a></span>
+          <span class="sotioals__around--img"> <a class="footer__socialmedia--squire" href="http://www.google.com"
             ><img
               class="main__img"
-              src="./images/instagram-logo-BB7C1CC9BD-seeklogo.com.png"
-          /></a>
-          <a href="http://www.google.com"
-            ><img class="main__img" src="./images/t.png"
-          /></a>
-          <a href="http://www.google.com"
+              src="./images/p.png"
+          /></a></span>
+          <span class="sotioals__around--img">  <a href="http://www.google.com"
             ><img class="main__img" src="./images/g.png"
-          /></a>
-          <a href="http://www.google.com"
-            ><img class="main__img" src="./images/p.png"
-          /></a>
+          /></a></span>
+          <span class="sotioals__around--img">   <a href="http://www.google.com"
+            ><img class="main__img" src="./images/t.png"
+          /></a></span>
+          <span class="sotioals__around--img">  <a href="https://www.pinterest.com/login/"
+            ><img class="main__img" src="./images/f.png"
+          /></a></span>
           <div></div>
         </div>
       </div>
