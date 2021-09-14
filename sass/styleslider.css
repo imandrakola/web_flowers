@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/fontslider/icomoon.eot?erp25j');
+  src:  url('../fonts/fontslider/icomoon.eot?erp25j#iefix') format('embedded-opentype'),
+    url('../fonts/fontslider/icomoon.ttf?erp25j') format('truetype'),
+    url('../fonts/fontslider/icomoon.woff?erp25j') format('woff'),
+    url('../fonts/fontslider/icomoon.svg?erp25j#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ctrl:before {
+  content: "\ea503";
+  cursor: pointer;
+
+}
+.icon-ctrl1:before {
+  content: "\ea513";
+  cursor: pointer;
+
+}

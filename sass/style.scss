@@ -1,0 +1,421 @@
+@import "listStyle";
+@import "_slider";
+
+body {
+  background: #f7f7f7;
+}
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  @include headerAll;
+
+  &__increment-btn {
+    @include headerincrementbtn;
+  }
+  &__increment-btn2 {
+    @include headerincrementbtn2;
+  }
+  &__increment-btn1 {
+    @include headerincrementbtn1;
+  }
+  &__increment-btn3 {
+    @include headerincrementbtn3;
+  }
+
+  &__counter {
+    @include headercounter;
+  }
+  &__counter2 {
+    @include headercounter2;
+  }
+
+  &__pointers {
+    @include pointer;
+  }
+  &__faverit {
+    @include headerfaverit;
+  }
+  &__faverit > span {
+    @include faveritspan;
+  }
+  &__cart {
+    @include headerfaverit;
+    &--buy {
+      @include headercartbuy;
+
+      &-information {
+        @include headercartbuyinformation;
+      }
+      &-images {
+        @include headercartbuyimages;
+      }
+      &-contact {
+        @include headercartbuycontact;
+      }
+      &-adder {
+        @include headercartbuyadder;
+
+        &-plus {
+          @include headercartbuyadderplus;
+        }
+        &-miner {
+          @include headercartbuyadderminer;
+        }
+      }
+      &-button {
+        @include headercartbuybutton;
+      }
+    }
+    &--boxes {
+      @include headercartboxes;
+    }
+  }
+  &__cart > span {
+    @include cartspan;
+  }
+
+  &__phone > img {
+    @include headerphoneimg;
+  }
+
+  &__phone {
+    @include headerphone;
+  }
+  &__main {
+    @include header__mainAll;
+
+    &--information-menu > ul {
+      @include headermaininformationmenu;
+    }
+    .header__main--information-buy > button {
+      @include header__main--information-buybutton;
+    }
+
+    &--logo {
+      @include header__logoSite;
+      & > img {
+        @include img__logo;
+      }
+    }
+    &--information {
+      @include headerMainInformation;
+
+      &-buy {
+        @include headerMainInformationBuy;
+        & > input {
+          @include headerMainInformationBuyinput;
+        }
+        ::placeholder {
+          color: rgba(0, 0, 0, 0.678);
+          font-weight: bold;
+        }
+      }
+
+      &-menu {
+        @include headerMainInformationMenu;
+      }
+    }
+  }
+}
+.form {
+  @include forms;
+
+  &__lineheights {
+    @include lineheights;
+  }
+  &__input {
+    @include forminput;
+
+    &--submit {
+      @include forminputsubmit;
+    }
+    &--lable {
+      @include forminputlable;
+    }
+    &--font {
+      @include formInputfont;
+    }
+  }
+  &__marauto {
+    @include marauto;
+  }
+  &__lable {
+    @include formlable;
+  }
+}
+
+.main {
+  &__images--footer {
+    @include mainimagesfooter;
+  }
+  &__chat--CostomerReview {
+    @include mainchatCostomerReview;
+  }
+  &__review--product {
+    @include mainreviewproduct;
+  }
+  &__stars--images-style {
+    @include mainstarsimagesstyle;
+  }
+  &__stars--images-styles {
+    @include mainstarsimagesstyles;
+  }
+  &__stars--images-move {
+    @include mainstarsimagesmove;
+  }
+  &__label--stars {
+    @include mainlabelstars;
+  }
+  &__images--stars {
+    @include mainimagesstars;
+  }
+  &_chates {
+    @include mainchates;
+  }
+  &__chat--Costomer {
+    @include mainchatCostomer;
+  }
+  &__chat--image > img {
+    @include mainchatimage;
+  }
+  &__chat {
+    @include mainchat;
+    &--inptus {
+      @include mainchatinptus;
+    }
+    &--stars {
+      @include mainchatstars;
+    }
+  }
+  &__img {
+    @include mainimg;
+  }
+  &__Discription {
+    @include mainDiscription;
+  }
+  &__lorem {
+    @include mainlorem;
+  }
+  &__flex {
+    @include mainflex;
+    &:hover{
+      display: block;
+      height: 11rem;
+      border-radius: 10px;
+      background: #e4e4e4;
+      box-shadow: 3px 2px 12px 0px #bd31b1;
+      margin-top: 0.5rem;
+      cursor: pointer;
+      color: #000;
+      font-size: 9pt;
+    }
+  }
+  &__margin--span {
+    @include mainmarginspan;
+  }
+  &__slider--goft {
+    @include mainslidergoft;
+  }
+  &__gift {
+    @include maingift;
+  }
+  &_hr {
+    @include mainhr;
+  }
+  &_hr2 {
+    @include mainhr2;
+  }
+  &_hr3 {
+    @include mainhr3;
+  }
+  &__list {
+    @include mainlist;
+  }
+  &__input {
+    &--apply {
+      @include maininputapply;
+    }
+    &--write {
+      @include maininputwrite;
+      &::placeholder {
+        color: #00000047;
+      }
+    }
+    &--write2 {
+      @include maininputwrite2;
+      &::placeholder {
+        color: #00000047;
+      }
+    }
+    &--review {
+      @include maininputreview;
+      &::placeholder {
+        color: #00000047;
+      }
+    }
+    &--text {
+      @include maininputtext;
+    }
+    @include maininput;
+    &--coupon {
+      @include maininputcoupon;
+    }
+    &--continue {
+      @include maininputcontinue;
+    }
+  }
+  &__wishlist {
+    @include mainwishlist;
+    &--addwishlist {
+      @include mainwishlistaddwishlist;
+    }
+  }
+  &__box {
+    &--open {
+      @include mainboxopen;
+    }
+
+    &--shawn {
+      @include mainboxshawn;
+    }
+    &--squer {
+      @include mainboxsquer;
+    }
+    &--arrow {
+      @include mainboxarrow;
+    }
+    &--inbox {
+      @include mainboxinbox;
+    }
+  }
+  &__disy {
+    @include maindisy;
+  }
+  &__slider {
+    @include sliders;
+
+    &--gif-size {
+      @include mainslidergiftsize;
+    }
+    &--goft {
+      @include mainmargingif;
+    }
+    &--arrow-lower {
+      @include mainsliderarrowlower;
+    }
+    &--arrow-lowers {
+      @include mainsliderarrowlowers;
+    }
+    &--images-size {
+      @include mainsliderimagessize;
+    }
+
+    &--shower {
+      @include mainslidershower;
+      &-img {
+        @include mainslidershowerimg;
+      }
+    }
+    &--lowshower {
+      @include mainsliderlowshower;
+    }
+    &--Order {
+      @include mainsliderOrder;
+    }
+
+    &--daisy {
+      @include mainsliderdaisy;
+    }
+    &--product {
+      @include mainsliderproduct;
+    }
+    &--gerbera {
+      @include mainslidergerbera;
+    }
+    &_box {
+      @include sliderbox;
+    }
+    &_show {
+      @include slidershow;
+    }
+  }
+}
+.footer {
+  &__socialmedia {
+    @include footersocialmedia;
+  }
+  &__copy--right {
+    @include footercopyright;
+  }
+  &__social {
+    @include footersocial;
+  }
+  &__gary--color {
+    @include footergarycolor;
+  }
+  @include footer;
+  &__customer1 {
+    @include footercustomer1;
+  }
+  &__customer2 {
+    @include footercustomer2;
+  }
+  &__customer3 {
+    @include footercustomer3;
+  }
+}
+
+.show {
+  display: none;
+}
+
+.slider__margin--click {
+  margin-left: -10rem !important;
+
+}
+// heart
+.heart-btn {
+  position: static;
+  top: 53rem;
+  left: 71%;
+  transform: translate(26%, 97%);
+}
+
+.heart {
+  position: absolute;
+  background: url(../images/img.png) no-repeat;
+  background-position: left;
+  background-size: 2900%;
+  height: 90px;
+  width: 92px;
+  top: 50%;
+  left: -21%;
+  transform: translate(-25%, -50%);
+  cursor: pointer;
+}
+
+.heart.heart-active {
+  animation: animate 0.8s steps(28) 1;
+  background-position: right;
+}
+@keyframes animate {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.kalapala {
+  box-shadow: 6px 6px 19px 1px #00000021;
+  padding-bottom: 1rem;
+  border-radius: 6px;
+}
+.ma{
+  display: flex;
+}
