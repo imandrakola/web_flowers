@@ -6,7 +6,6 @@ body {
 }
 * {
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
   margin: 0;
   padding: 0;
 }
@@ -206,8 +205,8 @@ body {
       display: block;
       height: 11rem;
       border-radius: 10px;
-      background: #e4e4e4;
-      box-shadow: 3px 2px 12px 0px #bd31b1;
+      background: #fff9f9;
+      box-shadow: 3px 2px 12px 0px #a0a0a0;
       margin-top: 0.5rem;
       cursor: pointer;
       color: #000;
@@ -232,6 +231,9 @@ body {
   &_hr3 {
     @include mainhr3;
   }
+  &_hr4 {
+    @include mainhr4;
+  }
   &__list {
     @include mainlist;
   }
@@ -242,19 +244,19 @@ body {
     &--write {
       @include maininputwrite;
       &::placeholder {
-        color: #00000047;
+        color: #0000007e;
       }
     }
     &--write2 {
       @include maininputwrite2;
       &::placeholder {
-        color: #00000047;
+        color: #0000007e;
       }
     }
     &--review {
       @include maininputreview;
       &::placeholder {
-        color: #00000047;
+        color: #0000007e;
       }
     }
     &--text {
@@ -387,13 +389,13 @@ body {
 
 .heart {
   position: absolute;
-  background: url(../images/img.png) no-repeat;
+  background: url(../images/img2.png) no-repeat;
   background-position: left;
   background-size: 2900%;
   height: 90px;
   width: 92px;
   top: 50%;
-  left: -21%;
+  left: -39%;
   transform: translate(-25%, -50%);
   cursor: pointer;
 }
@@ -419,3 +421,42 @@ body {
 .ma{
   display: flex;
 }
+a{
+  text-decoration: none;
+  color: #2F2F2F;
+}
+.responsive__menu{
+  width: 1rem;
+  height: 1rem;
+  display: none;
+}
+
+.arrow__form{
+  margin-top: -1.7rem;
+  margin-left: 8.5rem;
+}
+.responsiv__menu{
+  width: 15rem;
+  display: flex;
+  height: 20rem;
+  z-index: 12;
+  position: absolute;
+  background: #ffffff;
+  margin-top: 0.1rem;
+  box-shadow: 0px 0px 9px 1px rgb(0 0 0 / 54%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  display: none;
+}
+.a{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+.a:hover{
+
+  background:#f3557c;
+}
+
